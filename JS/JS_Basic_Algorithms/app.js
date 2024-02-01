@@ -59,8 +59,12 @@ const car2 = {name: 'Chevrolet Corbina', basePrice: 70000, finalPrice: 80000};
 
 //!--------------------------------------------------------------------------
 //?1.1 Dado el siguiente javascript, cambia el valor de la propiedad age a 25.
-const character = {name: 'Jack Sparrow', age: 10};
+//?const character = {name: 'Jack Sparrow', age: 10};
 //!--------------------------------------------------------------------------
+const character = { name: 'Jack Sparrow', age: 10};
+console.log(character);
+character.age = 25;
+console.log(character);
 
 
 //!--------------------------------------------------------------------------
@@ -72,21 +76,29 @@ const character = {name: 'Jack Sparrow', age: 10};
 	'Soy Jon Snow, tengo 24 años y me gustan los lobos.'
 //!--------------------------------------------------------------------------
 
-const firstName = 'Jon';
-const lastName = 'Snow';
-const age = 24;
-const nombreCompleto = ('Soy ${firstName} ${lastName}, tengo ${age} y me gustan los lobos.');
-console.log("🚀 ~ nombreCompleto:", nombreCompleto)
+firstName = 'Jon'; 
+lastName = 'Snow'; 
+age = 24;
+
+let firstName = "Jon";
+let lastName = "Snow";
+let age = 24;
+
+console.log(`soy ${firstName} ${lastName}, tengo ${age} años y me gust
+an los lobos`);
 
 
 //!--------------------------------------------------------------------------
 
 //?1.3 Dado el siguiente javascript, imprime con un console.log la suma del precio de
 //?ambos juguetes.
+//?const toy1 = {name: 'Buss myYear', price: 19};
+//?const toy2 = {name: 'Rallo mcKing', price: 29};
+//!--------------------------------------------------------------------------
 const toy1 = {name: 'Buss myYear', price: 19};
 const toy2 = {name: 'Rallo mcKing', price: 29};
-//!--------------------------------------------------------------------------
 
+console.log("Total Price", toy1.price + toy2.price);
 
 
 //!--------------------------------------------------------------------------
@@ -143,3 +155,118 @@ console.log(K);
 //? teniendo dos variables p = 10 y j = 5.
 //!--------------------------------------------------------------------------
 
+
+
+/*Iteracion #4:Arrays
+1.1 Consigue el valor "HULK" del array de avengers y muestralo por consola.
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+1.2 Cambia el primer elemento de avengers a "IRONMAN"
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+1.3 console numero de elementos en el array usando la propiedad correcta de Array.
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+
+1.4 Añade 2 elementos al array: "Morty" y "Summer". 
+Muestra en consola el último personaje del array
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry"];
+
+1.5 Elimina el último elemento del array y muestra el primero y el último por consola.
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];
+
+1.6 Elimina el segundo elemento del array y muestra el array por consola.
+const rickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lapiz Lopez"];*/
+
+
+//!--------------------------------------------------------------------------
+//?1.1 Consigue el valor "HULK" del array de avengers y muestralo por consola.
+const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+//!--------------------------------------------------------------------------
+
+const nameAvegers =  avergers[0];
+
+//!--------------------------------------------------------------------------
+//?1.2 Cambia el primer elemento de avengers a "IRONMAN"
+//?const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+//!--------------------------------------------------------------------------
+
+avergers [0]="Iroman";
+console.log(nameAvegers);
+
+
+//!--------------------------------------------------------------------------
+//?1.3 console numero de elementos en el array usando la propiedad correcta de Array.
+//?const avengers = ["HULK", "SPIDERMAN", "BLACK PANTHER"];
+//!--------------------------------------------------------------------------
+
+console.log(avergers.length);
+
+
+
+
+
+
+
+
+
+
+
+
+/*iteracion #5 condicionales */	
+const number1 = 10;
+const number2 = 20;
+const number3 = 2;
+
+//ejemplo 
+if(number1 === 10){
+    console.log('number1 es estrictamente igual a 10')}
+
+	if (number2 /= number1==2) {
+		console.log("number2 dividido entre number1 es igual a 2");
+	  }
+	  
+	  if (number1!==number2) {
+		console.log("number1 es estrictamente distinto a number2");
+	  }
+	  
+	  if (number3!=number1) {
+		console.log("number3 es distinto number1");
+	  }
+	  
+	  if (number3 *=5 == number1) {
+		console.log("number3 por 5 es igual a number1");
+	  }
+	  
+	  if (((number3 * 5)==number1) && ((number1*2)==number2)) {
+		console.log("number3 por 5 es igual a number1 Y number1 por 2 es igual a number2");
+	  }
+	  
+	  if (((number2/2)== number1) || ((number1/5)== number3)) {
+		console.log("number2 entre 2 es igual a number1 O number1 entre 5 es igual a number3");
+	  }
+
+
+/* iteracion #6 bucles
+	  1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola.
+
+1.2 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola solo 
+cuando el resto del numero dividido entre 2 sea 0.
+
+1.3 Crea un bucle para conseguir dormir contando ovejas. 
+Este bucle tiene que dar 10 vueltas, es decir, 10 console.log.
+Muestra por consola un mensaje diciendo 'Intentando dormir 🐑' en cada vuelta del bucle 
+y cambia el mensaje en la décima vuelta a 'Dormido!'
+*/
+//!--------------------------------------------------------------------------
+//?1.1 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola.
+//!--------------------------------------------------------------------------
+let i = 0;
+while (i < 9) {
+	console.log(`${i}`);
+	i++;
+  }
+
+//!--------------------------------------------------------------------------
+//??1.2 Crea un bucle for que vaya desde 0 a 9 y muestralo por consola solo 
+//?cuando el resto del numero dividido entre 2 sea 0.
+//!--------------------------------------------------------------------------
